@@ -1,0 +1,30 @@
+title: "[Question] "
+labels: ["Fast QA"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Your question (usually casual and easy-to-answer) about the project.
+  - type: textarea
+    id: question
+    attributes:
+      label: "Your Question"
+      description: "Your question here. For formal and complex questions, consider creating an issue."
+      placeholder: |
+        "I'm a bit confused about the RTT calculation. Why are alpha=0.15 and beta=0.3 specified in the document? What are the trade-offs here?"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: project-part
+    attributes:
+      label: "Which part of the project is this related to?"
+      description: "Select the most relevant part."
+      options:
+        - "Core Concepts"
+        - "Requirement Details"
+        - "Code Framework / Setup"
+        - "Testing / Grading"
+        - "Other"
+    validations:
+      required: true

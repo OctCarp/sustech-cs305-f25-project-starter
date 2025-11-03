@@ -1,0 +1,29 @@
+# Alternative Dockerfile using Python 3.12 on Debian Bookworm
+# FROM python:3.12-slim
+FROM python:3.12
+
+ENV TZ=Asia/Shanghai
+ENV DEBIAN_FRONTEND=noninteractive
+
+ENV PERL_LWP_Protocol_https_pk_version=0
+
+RUN apt-get update && apt-get install -y \
+    perl \
+    sed \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# workdir
+WORKDIR /app
+
+COPY pyproject.toml .
+
+COPY src/ src/
+COPY README.md . 
+
+RUN pip install --upgrade pip
+RUN pip install -e .
+
+COPY . .
+
+CMD ["/bin/bash"]

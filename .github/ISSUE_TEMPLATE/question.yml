@@ -1,0 +1,41 @@
+name: "❓ Question / Help Request"
+description: "Ask a question about project requirements, concepts, or implementation details."
+title: "[Question] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for your question! Please use this form for **project-related** questions — for example, clarifications about requirements, or understanding how the provided framework works.
+        > **Note:** General questions (such as: *What is the TCP ACK mechanism?*) will **not** be answered.  
+        > Please make sure your question is **specific to the project or its implementation context**.
+        >
+        > Before asking a question, please think first and try to search the answer by yourself first.
+
+
+  - type: textarea
+    id: question
+    attributes:
+      label: "Your Question"
+      description: "Please be as specific as possible. What part of the project are you wondering about?"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: project-part
+    attributes:
+      label: "Which part of the project is this related to?"
+      description: "Select the most relevant part."
+      options:
+        - "Core Concepts (chunk, peer)"
+        - "P2P Handshaking (WHOHAS, IHAVE, GET)"
+        - "Packet Structure"
+        - "Implementation (select, simsocket)"
+        - "Reliable Data Transfer (RDT)"
+        - "Congestion Control"
+        - "Simulator Setup"
+        - "Testing / Grading"
+        - "Other"
+    validations:
+      required: true
+

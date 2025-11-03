@@ -1,0 +1,40 @@
+Dockerfile
+Dockerfile_alt
+
+.git/
+.gitignore
+.gitattributes
+
+run_docker.sh
+
+
+.venv/
+venv/
+*.env
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+build/
+dist/
+*.egg-info
+
+
+logs/
+*.log
+
+# *.fragment
+# *.chunkhash
+# concurrency_analysis.png
+
+docs/
+
+.mypy_cache/
+.pytest_cache/
+
+.DS_Store
+Thumbs.db
+
+.DS_Store

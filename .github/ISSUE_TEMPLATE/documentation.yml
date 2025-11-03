@@ -1,0 +1,29 @@
+name: "📄 Documentation Issue"
+description: "Report an error, typo, or serious unclear section in the project documentation."
+title: "[Doc] "
+labels: ["documentation"]
+body:
+  - type: input
+    id: document-section
+    attributes:
+      label: "Document and Section"
+      description: "Which document and (if applicable) which section has the issue?"
+      placeholder: "e.g., Main document, Section: 'Reliable Data Transfer'"
+    validations:
+      required: true
+
+  - type: textarea
+    id: issue-description
+    attributes:
+      label: "Issue Description"
+      description: "What is wrong or unclear? (e.g., typo, confusing explanation, missing information)"
+      placeholder: "There is a typo in the TimeoutInterval formula."
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: "Suggested Correction (Optional)"
+      description: "How do you think we can improve it?"
+      placeholder: "The formula should be..."

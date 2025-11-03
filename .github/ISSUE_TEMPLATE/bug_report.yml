@@ -1,0 +1,83 @@
+name: "🐛 Bug Report"
+description: "Report a bug, test failure, or unexpected behavior in the code or simulator."
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a bug! Please provide as much detail as possible to help us reproduce and fix the issue.
+        > **Note:** This form is intended for reporting **issues related to the provided code framework, simulator, or test scripts**
+        > — for example, when something in the starter code behaves unexpectedly, or a test case seems incorrect. 
+        > 
+        > Before submitting, please **try to debug the issue yourself** and ensure it's not a logic error in your own implementation.
+        > Low-effort bug reports (e.g., "my code doesn't work") may be closed.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Bug Description"
+      description: "A clear and concise description of what the bug is."
+      placeholder: "When I run test_01, the peer crashes, but my implementation is right, maybe the test script has some issues like..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: "Steps to Reproduce"
+      description: "Provide the scenario and steps in which the bug occurred, the more detailed the better."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: "Expected Behavior"
+      description: "What did you expect to happen?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: "Actual Behavior"
+      description: "What actually happened? Please include any error messages, tracebacks, or relevant logs."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: project-part
+    attributes:
+      label: "Which part of the project is this related to?"
+      description: "Select the most relevant part."
+      options:
+        - "Handshaking (WHOHAS, IHAVE, GET)"
+        - "Reliable Data Transfer (RDT, ACKs, Timeout)"
+        - "Congestion Control (Slow Start, Congestion Avoidance)"
+        - "Packet Structure"
+        - "Concurrency"
+        - "Simulator"
+        - "Test Scripts"
+        - "Environment Setup"
+        - "Other"
+    validations:
+      required: true
+
+  - type: input
+    id: python-version
+    attributes:
+      label: "Python Version"
+      description: "What version of Python are you using? (e.g., 3.12.1)"
+      placeholder: "3.12.x"
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: "Operating System"
+      description: "e.g., Ubuntu 22.04 (WSL), native debian 11, etc."
+      placeholder: "Ubuntu 22.04 (WSL)"
+    validations:
+      required: true
