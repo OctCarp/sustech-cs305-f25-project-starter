@@ -6,6 +6,9 @@ import hashlib
 import argparse
 import pickle
 
+from pathlib import Path
+sys.path.append(str(Path(__file__).resolve().parent.parent))
+
 from utils import simsocket
 from utils.simsocket import AddressType
 from utils.peer_context import PeerContext
