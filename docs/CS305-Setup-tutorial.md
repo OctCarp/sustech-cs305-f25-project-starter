@@ -55,7 +55,7 @@ The four main directories serve the following purposes:
 Below is a description of the most important files in the project code framework:
 
 - **`src/peer.py`**: The main file for your implementation. You are expected to complete this file to meet the project requirements.
-  - **Note**: You must use the provided `simsocket` for all network operations; normal sockets are not permitted. We allow you to use better code design that conforms to best practices.  Ensure that your program's entry point is `peer.py`, which can parse the given command-line arguments.
+  - **Note**: You must use the provided `simsocket` for all network operations; normal `socket.socket` object are not permitted. We allow you to use better code design that conforms to best practices.  Ensure that your program's entry point is `peer.py`, which can parse the given command-line arguments.
 
 - **`utils/simsocket.py`**: Provides the `SimSocket` class, a modified socket that can run with or without the network simulator. **Do not modify this file**.
 - **`utils/hupsim.pl`**: A network simulator written in Perl that can emulate routing, queuing, congestion, and packet loss.
