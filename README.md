@@ -4,6 +4,9 @@ For SUSTech CS305 Fall 2025: P2P File Transfer with Reliable Data Transfer
 
 ## 📢 Important Updates
 
+- **[2025-12-04]**
+  - Add requirement and example for congestion control in Setup-tutorial to Section 5 - [#7](https://github.com/OctCarp/sustech-cs305-f25-project-starter/pull/7)
+  
 - **[2025-11-24]**
   - Fix potential `ModuleNotFoundError` in test scripts - [#3](https://github.com/OctCarp/sustech-cs305-f25-project-starter/pull/3)
   - Clarify usage rules for the socket module - [#4](https://github.com/OctCarp/sustech-cs305-f25-project-starter/pull/4)
