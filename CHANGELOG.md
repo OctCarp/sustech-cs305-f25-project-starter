@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2025-12-05]
+
+### Add
+
+- **Add public comprehensive tests 05 06** - [#9](https://github.com/OctCarp/sustech-cs305-f25-project-starter/pull/9)
+
 ## [2025-12-04]
 
 ### Add
