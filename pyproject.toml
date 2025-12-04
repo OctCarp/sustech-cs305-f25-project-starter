@@ -14,7 +14,7 @@ authors = [{ name = "Your Name", email = "you@example.com" }]
 requires-python = ">=3.12"
 
 [tool.pytest.ini_options]
-# addopts = "-s" # -s: disable output capturing direct, stdout will back to terminal
+# addopts = "-s" # -s: disable output capturing, stdout will back to terminal
 log_cli = false # log cli for pytest
 log_cli_level = "DEBUG"
 log_cli_format = "%(asctime)s [%(levelname)8s] %(message)s (%(filename)s:%(lineno)s)"
