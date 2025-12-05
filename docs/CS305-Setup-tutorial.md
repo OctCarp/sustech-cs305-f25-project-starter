@@ -304,9 +304,9 @@ You are required to plot a graph to show your congestion control process. The gr
 - **Packet Loss Handling:** When a timeout or loss occurs, the window size must drop to 1, and the `ssthresh` must be updated for the next cycle.
 - **Re-entering Slow Start**: Your second slow start will have a lower threshold for turning to congestion avoidance.
 
-Below is a simple example for all these phrases. Note that this ideal example curve **only shows a trend** and may not same as the actual working conditions and configuration values.
+Below is a simple example for all these phases. Note that this ideal example curve **only shows a trend** and may not same as the actual working conditions and configuration values.
 
-You can add other necessary information to the graph, but at least your curve should reflect these congestion control phrases.
+You can add other necessary information to the graph, but at least your curve should reflect these congestion control phases.
 
 <img src="./img/cc-example.png" alt="cc-example" style="zoom:40%;" />
 
