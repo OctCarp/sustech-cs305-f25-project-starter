@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2025-12-18]
+
+### Change
+
+- **Remove default `--timeout 60` for peer in `grader.py`** - [#15](https://github.com/OctCarp/sustech-cs305-f25-project-starter/pull/15)
+
 ## [2025-12-05]
 
 ### Add
