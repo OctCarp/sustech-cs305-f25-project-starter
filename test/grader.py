@@ -27,7 +27,7 @@ class PeerProc:
         node_map_loc: str,
         has_chunk_loc: str,
         max_transmit: int = 1,
-        timeout: int = 60,
+        timeout: int | None = None,
     ) -> None:
         self.id: int = identity
         self.peer_file_loc: str = peer_file_loc
@@ -41,7 +41,7 @@ class PeerProc:
         self.recv_record: dict[tuple[str, int], dict[int, int]] = (
             {}
         )  # {from_id:{type:cnt}}
-        self.timeout: int = timeout
+        self.timeout: int | None = timeout
 
     def _get_command_args(self) -> list[str]:
         module_name: str = self.peer_file_loc
@@ -182,7 +182,7 @@ class GradingSession:
         has_chunk_loc: str,
         max_connection: int,
         peer_addr: tuple[str, int],
-        timeout: int | None = 60,
+        timeout: int | None = None,
     ) -> None:
         peer: PeerProc = PeerProc(
             identity,
