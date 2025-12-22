@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2025-12-23]
+
+### Add
+
+- **Add grading policy for test script part** - [#20](https://github.com/OctCarp/sustech-cs305-f25-project-starter/pull/20)
+
 ## [2025-12-18]
 
 ### Add
