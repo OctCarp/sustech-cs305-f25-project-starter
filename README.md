@@ -4,8 +4,10 @@ For SUSTech CS305 Fall 2025: P2P File Transfer with Reliable Data Transfer
 
 ## 📢 Important Updates
 
+- **[2025-12-23]**
+  - Add grading policy for test script part - [#20](https://github.com/OctCarp/sustech-cs305-f25-project-starter/pull/20)
+
 - **[2025-12-18]**
-  
   - Add presentation detailed requirements - [#16](https://github.com/OctCarp/sustech-cs305-f25-project-starter/pull/16)
   
   - Remove default `--timeout 60` for peer in `grader.py` - [#15](https://github.com/OctCarp/sustech-cs305-f25-project-starter/pull/15)
